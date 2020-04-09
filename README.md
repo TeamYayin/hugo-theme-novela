@@ -1,24 +1,22 @@
-# Hugo Novela
+# Nidhi Hugo Novela
 
 A port of [Narative](https://www.narative.co/)'s Gatsby theme [Novela](https://www.narative.co/labs/novela/)
 
-**This theme requires Hugo > 0.55.0 and has been tested with Hugo v0.62.2**
+This theme requires Hugo > 0.55.0 and has been tested with Hugo v0.61.0 and v0.62.2.
 
-![](https://raw.githubusercontent.com/forestryio/hugo-theme-novela/master/images/tn.png)
+To read about the actual forestry fork please do to this [link](https://github.com/forestryio/hugo-theme-novela/) and open in the forestry website using the button below.
 
-<a href="https://app.forestry.io/quick-start?repo=forestryio/novela-hugo-starter&engine=hugo&version=0.62.2">
-    <img alt="Import this project into Forestry" src="https://assets.forestry.io/import-to-forestryK.svg" />
-</a>
+[![Import this project into Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=forestryio/novela-hugo-starter&engine=hugo&version=0.62.2)
 
-## Customization
+## Customization for Nidhi Blog
+
+Removed images from post page and home page layouts and changed logo.
 
 ### Logo
 
-Override `/themes/novela/layouts/partials/icons/ui/logo.html` with your own file at `/layouts/partials/icons/ui/logo.html`; include your logo in SVG format for desktop and mobile formats. 
+Override `/themes/novela/layouts/partials/icons/ui/logo.html` with your own file at `/layouts/partials/icons/ui/logo.html`; include your logo in SVG format for desktop and mobile formats.
 
 Novela supports light and dark mode. To have your logo respond in kind, add `class="change-fill"` to the svg path(s).
-
-
 
 ### Socials
 
@@ -34,6 +32,7 @@ taxonomies:
 ```
 
 #### Creating authors
+
 Add the following file to your content directory and Front Matter example.
 
 ```yaml
@@ -57,9 +56,11 @@ social:
   - title: github
     url: https://github.com
 ---
+
 ```
 
-#### Assigning authors to posts.
+#### Assigning authors to posts
+
 Simply add the name of the author to the "authors" field:
 
 ```yaml
@@ -67,11 +68,12 @@ authors:
   - Dennis Brotzky
   - Thiago Costa
 ```
+
 ### Newsletter CTA
 
-This theme includes a shortcode for a newsletter callout form that you can add to any page. 
+This theme includes a shortcode for a newsletter callout form that you can add to any page.
 It uses [formspree.io](//formspree.io/) as proxy to send the actual email. Each month, visitors can send you up to one thousand emails without incurring extra charges. Visit the Formspree site to get get going add your Formspree email to your shortcode like this:
 
-```
+```GoLang
 {{< subscribe email="your@email.com" >}}
 ```
